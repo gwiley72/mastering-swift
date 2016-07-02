@@ -75,8 +75,13 @@ if #available(iOS 9.3, *) {
 // type-extensions
 
 extension CollectionType {
-    func explode {}
+    func explode() {
+        print("boom!")
+    }
 }
+
+var test = [1,2,3]
+test.explode()
 
 // do scope
 
