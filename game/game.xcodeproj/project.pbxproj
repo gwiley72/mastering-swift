@@ -17,6 +17,7 @@
 		F624381D1D3C6A1E000254AE /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F624381C1D3C6A1E000254AE /* Cell.swift */; };
 		F624381F1D3C6A8D000254AE /* Life.swift in Sources */ = {isa = PBXBuildFile; fileRef = F624381E1D3C6A8D000254AE /* Life.swift */; };
 		F62438211D3C6B14000254AE /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62438201D3C6B14000254AE /* GameBoard.swift */; };
+		F62438231D3DCB0D000254AE /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62438221D3DCB0D000254AE /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F624381C1D3C6A1E000254AE /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = game/Cell.swift; sourceTree = "<group>"; };
 		F624381E1D3C6A8D000254AE /* Life.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Life.swift; sourceTree = "<group>"; };
 		F62438201D3C6B14000254AE /* GameBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
+		F62438221D3DCB0D000254AE /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		F62437EE1D3B30B3000254AE = {
 			isa = PBXGroup;
 			children = (
+				F62438221D3DCB0D000254AE /* Utility.swift */,
 				F62438201D3C6B14000254AE /* GameBoard.swift */,
 				F624381E1D3C6A8D000254AE /* Life.swift */,
 				F624381C1D3C6A1E000254AE /* Cell.swift */,
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62438231D3DCB0D000254AE /* Utility.swift in Sources */,
 				F62437FD1D3B30B3000254AE /* ViewController.swift in Sources */,
 				F624381D1D3C6A1E000254AE /* Cell.swift in Sources */,
 				F62437FB1D3B30B3000254AE /* AppDelegate.swift in Sources */,

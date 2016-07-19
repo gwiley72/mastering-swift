@@ -29,25 +29,17 @@ class Life {
     }
     
     func cellNeighbors(cell: Cell) -> [Cell] {
-        var neighbors : [Cell] = []
-        for cell2 in cells {
-            
-            let a = abs(cell.xCoord - cell2.xCoord)
-            let b = abs(cell.yCoord - cell2.yCoord)
-            
-            var check = false
-            switch (a, b) {
-            case (1,1), (1,0), (0,1):
-                check = true
-            default:
-                check = false
-            }
-            
-            if check == true {
-                neighbors.append(cell2)
-            }
-        }
+        return self.cells.getNeighbors { self.cellsAreNeighbors(cell, sideB: $0) }
+    }
+    
+    func cellsAreNeighbors(sideA: Cell, sideB: Cell) -> Bool {
+        let a = abs(sideA.xCoord - sideB.xCoord)
+        let b = abs(sideA.yCoord - sideB.yCoord)
         
-        return neighbors
+        if case (0...1, 0...1) = (a,b) where !(a == 0 && b == 0) {
+            return true
+        } else {
+            return false
+        }
     }
 }
