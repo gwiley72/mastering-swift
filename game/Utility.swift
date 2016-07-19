@@ -9,14 +9,14 @@
 import Foundation
 
 extension Array {
-    func getNeighbors(predicate: (Cell) -> Bool) -> [Cell] {
-        var neighbors = [Cell]()
-        for item in self {
-            let cell = item as! Cell
-            if predicate(cell) {
-                neighbors.append(cell)
-            }
+    
+    func customFilter(predicate: (Element) -> Bool) -> [Element] {
+       
+        var filteredArray = [Element]()
+        for x in self where predicate(x) {
+            filteredArray.append(x)
         }
-        return neighbors
+
+        return filteredArray
     }
 }
